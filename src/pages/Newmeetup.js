@@ -10,7 +10,7 @@ function NewmeetupPage() {
   Firebase.initializeApp(config.firebase);
   function addmeetuphandler(meetupdata) {
     fetch(
-      'https://react-getting-started-e38d3-default-rtdb.firebaseio.com/',
+      'DBURL/meetup.json',
       {
         method:'POST',
         body:JSON.stringify(meetupdata),
