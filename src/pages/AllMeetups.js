@@ -21,11 +21,14 @@ const DUMMY_DATA = [
   },
 ];
 function AllMeetupspage() {
-  return (
+  
+    return (
     <section>
       <h1>AllMeetups</h1>
 
-      <Meetuplist meetups={DUMMY_DATA} />
+      <Meetuplist meetup={DUMMY_DATA} />
+    
+  
     </section>
   );
 }

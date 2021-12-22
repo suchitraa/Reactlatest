@@ -3,13 +3,14 @@ import AllMeetupspage from './pages/AllMeetups';
 import Favouritespage from './pages/Favourites';
 
 import NewmeetupPage from './pages/Newmeetup';
-import Mainnavigationcomponent from './components/layout/Mainnavigationcomponent';
+import Layout from './components/layout/layout';
+
 
 function App() {
   return (
     
-    <div>
-      <Mainnavigationcomponent/>
+    <Layout>
+      
       <Routes>
       <Route path='/' element={<AllMeetupspage />}/>
       
@@ -18,7 +19,7 @@ function App() {
      
       </Routes>  
    
-    </div>
+    </Layout>
   );
 }
 
